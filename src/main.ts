@@ -1,24 +1,43 @@
 import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+const language: string = "javascript";
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+const score: number = 100;
+
+const isAvailable: boolean = false;
+
+// Ternary operator
+const text: string = language === "javascript" ?  "weird": "awesome";
+
+
+let keyboard: any;
+keyboard = "tuantran";
+keyboard = 100;
+keyboard = false;
+
+let bottle: undefined = undefined;
+let mouse: null = null;
+
+let study: unknown;
+study = "typescript"
+
+if (typeof study === "string"){
+  study.split("");
+}
+
+function sum (a: unknown, b: unknown): number {
+  if (typeof a === "number" && typeof b === "number") {
+    return a + b;
+  }
+  return 0;
+}
+
+sum("5", "10"); // 0
+
+sum(5, 10); // 0
+
+function calculate(): never {
+  while (true) {
+    console.log("infinite");
+  }
+}
