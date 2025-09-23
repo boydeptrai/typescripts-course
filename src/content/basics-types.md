@@ -19,3 +19,8 @@ score = "10"
 - Type `never` không gán được bất kỳ giá trị nào
 
 - Dấu `?` nằm sau property nghĩa là optional(không bắt buộc)
+
+- Union type `|`
+``` typescript
+   string | number
+```
