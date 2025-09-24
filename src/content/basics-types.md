@@ -28,3 +28,15 @@ score = "10"
 - Intersection type `&`
 - `{}` là một type đưcrj biệt trong typescript, nó có tâts cả giá trị ngoại trừ `null` và `undefined` và không nên dùng khi khai báo chon các giá trị 
 - Kho làm việc với object thi nên khai báo rõ ràng hoặc dùng `Record<string,any>`
+
+- Sử dụng `typeof` vào biến để kiểm tra type của biến nào đó
+- Để khai báo báo type trong typescript thì chúng ta sử dụng từ khoá là `interface` và `type`
+```typescript
+type A = {
+   x: number;
+};
+interface A {
+   x: number;
+}
+```
+- Sử dụng `in` để kiểm tra 1 thuộc tính nào đó còn tồn tại trong obj nào đó hay không ? Phù hợp khi kiểm tra với Union Type
