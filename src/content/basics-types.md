@@ -24,3 +24,7 @@ score = "10"
 ``` typescript
    string | number
 ```
+
+- Intersection type `&`
+- `{}` là một type đưcrj biệt trong typescript, nó có tâts cả giá trị ngoại trừ `null` và `undefined` và không nên dùng khi khai báo chon các giá trị 
+- Kho làm việc với object thi nên khai báo rõ ràng hoặc dùng `Record<string,any>`
