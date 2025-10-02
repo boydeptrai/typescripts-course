@@ -47,3 +47,6 @@ interface A {
 
 - `satisfies` khi sử dụng satisfies thì "Value beast  type"
 - `as type` là chúng ta đang khai báo khống với typescript
+
+- Tuples type là type được xác định trước độ dài và type cho từng index cụ thể.
+- Không sử dụng được ` as type` cho tuples type.
