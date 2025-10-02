@@ -40,3 +40,10 @@ interface A {
 }
 ```
 - Sử dụng `in` để kiểm tra 1 thuộc tính nào đó còn tồn tại trong obj nào đó hay không ? Phù hợp khi kiểm tra với Union Type
+
+- Khi chúng ta sử dụng dấu : để khai báo type thì cái type nó sẽ mạnh hơn cái value (Type beast value)
+
+- `as const` sẽ biến giá trị thành readonly, chỉ đọc không thể thêm, xoá và cập nhật.
+
+- `satisfies` khi sử dụng satisfies thì "Value beast  type"
+- `as type` là chúng ta đang khai báo khống với typescript
